@@ -34,7 +34,7 @@ class AgriculturalMachinery {
   int get hashCode => id.hashCode ^ releaseDate.hashCode;
 
   @override
-  String toString() => '${this.id} ${this.releaseDate}';
+  String toString() => '$id $releaseDate';
 }
 
 final mapBefore2010 = <Countries, List<Territory>>{

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71673363-f06b-484a-a6ea-7bf4e3b4abe7" name="Changes" comment="task 1">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="71673363-f06b-484a-a6ea-7bf4e3b4abe7" name="Changes" comment="task-1_travka_muravka">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-1_travka_muravka/bin/surf_dart_courses_template.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-1_travka_muravka/bin/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709635666748</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task-1_travka_muravka">
+      <option name="closed" value="true" />
+      <created>1709635992927</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709635992927</updated>
+    </task>
+    <task id="LOCAL-00007" summary="task-1_travka_muravka">
+      <option name="closed" value="true" />
+      <created>1709635998001</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709635998001</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,7 +130,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="task-1_travka_muravka" />
+                        <option value="origin/task-1_travka_muravka" />
                       </list>
                     </value>
                   </entry>
@@ -128,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="task 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 1" />
+    <MESSAGE value="task-1_travka_muravka" />
+    <option name="LAST_COMMIT_MESSAGE" value="task-1_travka_muravka" />
   </component>
 </project>
