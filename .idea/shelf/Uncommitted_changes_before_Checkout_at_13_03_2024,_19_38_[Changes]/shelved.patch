@@ -1,0 +1,56 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"NONE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"71673363-f06b-484a-a6ea-7bf4e3b4abe7\" name=\"Changes\" comment=\"task-1_travka_muravka\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-1_travka_muravka/bin/surf_dart_courses_template.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-1_travka_muravka/bin/main.dart\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"task-1\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2dBVOS5dAUXJUwxHWerCv4edL5Y\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.cidr.known.project.marker\": \"true\",\n    \"cf.first.check.clang-format\": \"false\",\n    \"cidr.known.project.marker\": \"true\",\n    \"com.google.services.firebase.aqiPopupShown\": \"true\",\n    \"dart.analysis.tool.window.visible\": \"false\",\n    \"git-widget-placeholder\": \"task-1__travka__muravka\",\n    \"last_opened_file_path\": \"/Users/macbookairm1/Documents/flutter/surf_intensive\",\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\",\n    \"show.migrate.to.gradle.popup\": \"false\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"71673363-f06b-484a-a6ea-7bf4e3b4abe7\" name=\"Changes\" comment=\"\" />\n      <created>1709481426234</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1709481426234</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"task 1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709482689879</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709482689879</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"task 1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709482772402</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709482772402</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"task 1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709482773951</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709482773951</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"task 1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709635662753</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709635662753</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"task 1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709635666748</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709635666748</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"task-1_travka_muravka\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709635992927</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709635992927</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"task-1_travka_muravka\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709635998001</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709635998001</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"origin/task-1_travka_muravka\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"task 1\" />\n    <MESSAGE value=\"task-1_travka_muravka\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"task-1_travka_muravka\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,9 +4,20 @@
+     <option name="autoReloadType" value="NONE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="71673363-f06b-484a-a6ea-7bf4e3b4abe7" name="Changes" comment="task-1_travka_muravka">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-1_travka_muravka/bin/surf_dart_courses_template.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-1_travka_muravka/bin/main.dart" afterDir="false" />
++    <list default="true" id="71673363-f06b-484a-a6ea-7bf4e3b4abe7" name="Changes" comment="task-4_big_jackpot">
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/.gitignore" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/.idea/.gitignore" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/.idea/misc.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/.idea/modules.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/CHANGELOG.md" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/README.md" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/analysis_options.yaml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/big_jackpot.iml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/bin/main.dart" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/pubspec.lock" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/task-4_big_jackpot/pubspec.yaml" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,12 +34,13 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2dBVOS5dAUXJUwxHWerCv4edL5Y" />
+-  <component name="ProjectLevelVcsManager">
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <ConfirmationsSetting value="2" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+@@ -45,7 +57,7 @@
+     "cidr.known.project.marker": "true",
+     "com.google.services.firebase.aqiPopupShown": "true",
+     "dart.analysis.tool.window.visible": "false",
+-    "git-widget-placeholder": "task-1__travka__muravka",
++    "git-widget-placeholder": "task-4__big__jackpot",
+     "last_opened_file_path": "/Users/macbookairm1/Documents/flutter/surf_intensive",
+     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+     "show.migrate.to.gradle.popup": "false"
