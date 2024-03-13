@@ -12,6 +12,9 @@
       <excludeFolder url="file://$MODULE_DIR$/task-2_classes/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/task-2_classes/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/task-2_classes/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task_7_shop_shesterochka/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task_7_shop_shesterochka/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task_7_shop_shesterochka/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
