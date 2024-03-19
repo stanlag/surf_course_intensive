@@ -5,19 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71673363-f06b-484a-a6ea-7bf4e3b4abe7" name="Changes" comment="task-1_travka_muravka">
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/analysis_options.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/bin/main.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/pubspec.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6_filter_product/task_5_filter_product.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/kotlin/com/example/task8_counter_v2/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/drawable-v21/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/values-night/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/Runner/Runner-Bridging-Header.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/ios/RunnerTests/RunnerTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/pubspec.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8_counter_v2/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +99,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task__6__filter__product&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/macbookairm1/Documents/flutter/surf_intensive&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "task8__counter__v2",
+    "last_opened_file_path": "/Users/macbookairm1/Documents/flutter/surf_intensive",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/task_6_filter_product/bin/main.dart" />
@@ -147,7 +200,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/task-1_travka_muravka" />
+                        <option value="task_6_filter_product" />
                       </list>
                     </value>
                   </entry>
