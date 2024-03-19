@@ -1,0 +1,20 @@
+Index: .idea/surf_intensive.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\n    <exclude-output />\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/task-1/.dart_tool\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/task-1/.pub\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/task-1/build\" />\n    </content>\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n    <orderEntry type=\"library\" name=\"Dart SDK\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Dart Packages\" level=\"project\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/surf_intensive.iml b/.idea/surf_intensive.iml
+--- a/.idea/surf_intensive.iml	(revision 23324d32e4b049d995123ef0a31947b4433b3cb4)
++++ b/.idea/surf_intensive.iml	(date 1710347215337)
+@@ -6,6 +6,9 @@
+       <excludeFolder url="file://$MODULE_DIR$/task-1/.dart_tool" />
+       <excludeFolder url="file://$MODULE_DIR$/task-1/.pub" />
+       <excludeFolder url="file://$MODULE_DIR$/task-1/build" />
++      <excludeFolder url="file://$MODULE_DIR$/task-4_big_jackpot/.dart_tool" />
++      <excludeFolder url="file://$MODULE_DIR$/task-4_big_jackpot/.pub" />
++      <excludeFolder url="file://$MODULE_DIR$/task-4_big_jackpot/build" />
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
