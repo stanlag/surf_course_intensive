@@ -45,7 +45,7 @@
     },
     {
       "name": "coverage",
-      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/coverage-1.7.0",
+      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/coverage-1.7.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -225,7 +225,7 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/test-1.24.8",
+      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/test-1.24.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -237,7 +237,7 @@
     },
     {
       "name": "test_core",
-      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/test_core-0.5.8",
+      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/test_core-0.5.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -249,9 +249,9 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/vm_service-12.0.0",
+      "rootUri": "file:///Users/macbookairm1/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "watcher",
@@ -278,13 +278,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "classes",
+      "name": "task_5_filter_product",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-03-13T19:13:35.094745Z",
+  "generated": "2023-10-29T07:24:56.650536Z",
   "generator": "pub",
   "generatorVersion": "3.1.4"
 }
