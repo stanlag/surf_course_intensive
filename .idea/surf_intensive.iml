@@ -15,6 +15,18 @@
       <excludeFolder url="file://$MODULE_DIR$/task_7_shop_shesterochka/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/task_7_shop_shesterochka/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/task_7_shop_shesterochka/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task4_big_jackpot/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task4_big_jackpot/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task4_big_jackpot/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task_5_sports_are_great/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task_5_sports_are_great/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task_5_sports_are_great/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task_6_filter_product/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task_6_filter_product/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task_6_filter_product/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task_9_gesturemaster/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task_9_gesturemaster/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task_9_gesturemaster/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
