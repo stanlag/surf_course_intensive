@@ -8,6 +8,7 @@ import 'package:task_15_validation_of_forms/model_provider/pets_model.dart';
 import 'package:task_15_validation_of_forms/utils/my_data_picker.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:task_15_validation_of_forms/domain/type_of_pet.dart';
+import 'package:task_15_validation_of_forms/domain/vaccination.dart';
 
 class PetFormScreen extends StatelessWidget {
   const PetFormScreen({super.key});
@@ -111,7 +112,7 @@ class PetFormScreen extends StatelessWidget {
 
 /// Виджет для выбора питомца
 class _ChoosingAPetsWidget extends StatelessWidget {
-  const _ChoosingAPetsWidget({super.key});
+  const _ChoosingAPetsWidget();
 
   @override
   Widget build(BuildContext context) {
@@ -323,21 +324,21 @@ class CheckboxListVaccinationsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final petsModel = context.watch<PetsModel>();
     final vaccinations = [
-      {
-        'title': AppStrings.rabies,
-        'fieldName': FieldName.rabies,
-        'textController': TextEditingController(text: petsModel.rabies)
-      },
-      {
-        'title': AppStrings.covid,
-        'fieldName': FieldName.covid,
-        'textController': TextEditingController(text: petsModel.covid)
-      },
-      {
-        'title': AppStrings.malaria,
-        'fieldName': FieldName.malaria,
-        'textController': TextEditingController(text: petsModel.malaria)
-      },
+      Vaccination(
+        title: AppStrings.rabies,
+        fieldName: FieldName.rabies,
+        textController: TextEditingController(text: petsModel.rabies),
+      ),
+      Vaccination(
+        title: AppStrings.covid,
+        fieldName: FieldName.covid,
+        textController: TextEditingController(text: petsModel.covid),
+      ),
+      Vaccination(
+        title: AppStrings.malaria,
+        fieldName: FieldName.malaria,
+        textController: TextEditingController(text: petsModel.malaria),
+      ),
     ];
 
     return Padding(
@@ -356,15 +357,15 @@ class CheckboxListVaccinationsWidget extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4.0),
                 child: VaccinationCheckbox(
-                  title: vaccination['title'] as String,
+                  title: vaccination.title,
                   child: _DateFormFieldWidget(
                     label: AppStrings.vaccinationDateLabel,
                     onTap: () async {
                       DateTime pickedDate =
-                          await myDataPicker(context) as DateTime;
+                      await myDataPicker(context) as DateTime;
                       petsModel.vaccinationDateOnDateTime = pickedDate;
                       petsModel.updateField(
-                        fieldName: vaccination['fieldName'] as FieldName,
+                        fieldName: vaccination.fieldName,
                         value: pickedDate.toStringDateAndTime(),
                       );
                     },
@@ -379,8 +380,7 @@ class CheckboxListVaccinationsWidget extends StatelessWidget {
                       }
                       return null;
                     },
-                    controller:
-                        vaccination['textController'] as TextEditingController,
+                    controller: vaccination.textController,
                   ),
                 ),
               );

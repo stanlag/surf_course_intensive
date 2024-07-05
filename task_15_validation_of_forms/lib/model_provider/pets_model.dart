@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_15_validation_of_forms/assets/res/app_strings.dart';
-import '../domain/field_name.dart';
+import 'package:task_15_validation_of_forms/domain/field_name.dart';
 
 class PetsModel extends ChangeNotifier {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
@@ -8,24 +8,24 @@ class PetsModel extends ChangeNotifier {
   DateTime birthDateOnDateTime = DateTime.now();
   DateTime vaccinationDateOnDateTime = DateTime.now();
 
-  String _petName = '';
-  String _birthDate = '';
-  double _weight = 0.0;
-  String _email = '';
+  String? _petName;
+  String? _birthDate;
+  double? _weight;
+  String? _email;
 
   // прививки
-  String _rabies = '';
-  String _covid = '';
-  String _malaria = '';
+  String? _rabies;
+  String? _covid;
+  String? _malaria;
 
   // Геттеры для получения значений полей
-  String get petName => _petName;
-  String get birthDate => _birthDate;
-  double get weight => _weight;
-  String get email => _email;
-  String get rabies => _rabies;
-  String get covid => _covid;
-  String get malaria => _malaria;
+  String get petName => _petName ?? '';
+  String get birthDate => _birthDate ?? '';
+  double get weight => _weight ?? 0.0;
+  String get email => _email ?? '';
+  String get rabies => _rabies ?? '';
+  String get covid => _covid ?? '';
+  String get malaria => _malaria ?? '';
 
   void setSelectedIndex(int index) {
     selectedIndexPet = index;
