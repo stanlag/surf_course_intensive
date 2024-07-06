@@ -59,7 +59,10 @@ class PetsModel extends ChangeNotifier {
       default:
         throw ArgumentError(AppStrings.errorNameField);
     }
-    notifyListeners();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      notifyListeners();
+    });
   }
 
   /// Метод для подтверждения формы

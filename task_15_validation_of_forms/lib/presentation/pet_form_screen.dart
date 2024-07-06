@@ -241,6 +241,7 @@ class _BaseFormFieldWidget extends StatelessWidget {
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: TextFormField(
+        autovalidateMode: AutovalidateMode.onUserInteraction,
         keyboardType: keyboardType,
         controller: controller,
         decoration: InputDecoration(
@@ -268,6 +269,7 @@ class _BaseFormFieldWidget extends StatelessWidget {
   }
 }
 
+
 /// Виджет для ввода текста
 class _FormFieldWidget extends StatelessWidget {
   final String label;
@@ -289,6 +291,7 @@ class _FormFieldWidget extends StatelessWidget {
     );
   }
 }
+
 
 /// Виджет для поля ввода даты
 class _DateFormFieldWidget extends StatelessWidget {
