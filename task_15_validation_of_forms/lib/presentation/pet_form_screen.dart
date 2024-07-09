@@ -1,112 +1,149 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task_15_validation_of_forms/assets/colors/app_color.dart';
-import 'package:task_15_validation_of_forms/domain/field_name.dart';
+import 'package:task_15_validation_of_forms/domain/entity/field_name.dart';
 import 'package:task_15_validation_of_forms/utils/extension/data_time_x.dart';
 import 'package:task_15_validation_of_forms/assets/res/app_strings.dart';
 import 'package:task_15_validation_of_forms/model_provider/pets_model.dart';
 import 'package:task_15_validation_of_forms/utils/my_data_picker.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:task_15_validation_of_forms/domain/type_of_pet.dart';
-import 'package:task_15_validation_of_forms/domain/vaccination.dart';
+import 'package:task_15_validation_of_forms/domain/entity/type_of_pet.dart';
+import 'package:task_15_validation_of_forms/domain/entity/vaccination_field_configuration.dart';
+import 'package:task_15_validation_of_forms/domain/entity/field_value.dart';
 
 class PetFormScreen extends StatelessWidget {
   const PetFormScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final petsModel = context.watch<PetsModel>();
     return Scaffold(
       body: SafeArea(
         child: ListView(
-          children: [
-            const SizedBox(height: 40),
-            const _ChoosingAPetsWidget(),
-            Form(
-              key: petsModel.formKey,
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  children: [
-                    // Поле для имени питомца
-                    _FormFieldWidget(
-                      label: AppStrings.petName,
-                      validator: (value) {
-                        if (value == null ||
-                            value.trim().length < 3 ||
-                            value.trim().length > 20) {
-                          petsModel.updateField(
-                              fieldName: FieldName.petName, value: value);
-                          return AppStrings.petNameValidation;
-                        }
-                        return null;
-                      },
-                    ),
-                    // Поле для даты рождения питомца
-                    _DateFormFieldWidget(
-                      label: AppStrings.birthDate,
-                      validator: (value) {
-                        return (value == null || value.trim() == '')
-                            ? AppStrings.birthDateValidation
-                            : null;
-                      },
-                      onTap: () async {
-                        DateTime pickedDate =
-                            await myDataPicker(context) as DateTime;
-                        petsModel.birthDateOnDateTime = pickedDate;
-                        petsModel.updateField(
-                            fieldName: FieldName.birthDate,
-                            value: pickedDate.toStringDateAndTime());
-                      },
-                      controller:
-                          TextEditingController(text: petsModel.birthDate),
-                    ),
-                    // Поле для веса питомца
-                    _FormFieldWidget(
-                      label: AppStrings.weight,
-                      keyboardType: TextInputType.number,
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return AppStrings.weightValidationEmpty;
-                        }
-                        final parsedValue = double.tryParse(value);
-                        if (parsedValue == null || parsedValue <= 0) {
-                          return AppStrings.weightValidationInvalid;
-                        }
-                        petsModel.updateField(
-                            fieldName: FieldName.weight, value: parsedValue);
-                        return null;
-                      },
-                    ),
-                    // Поле для электронной почты хозяина
-                    _FormFieldWidget(
-                      label: AppStrings.ownerEmail,
-                      validator: (value) {
-                        if (value == null ||
-                            !RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
-                                .hasMatch(value)) {
-                          petsModel.updateField(
-                              fieldName: FieldName.email, value: value);
-                          return AppStrings.ownerEmailValidation;
-                        }
-                        return null;
-                      },
-                    ),
-                    // Условное отображение чекбоксов прививок
-                    petsModel.selectedIndexPet == 0 ||
-                            petsModel.selectedIndexPet == 1
-                        ? const CheckboxListVaccinationsWidget()
-                        : const SizedBox.shrink(),
-                    // Кнопка сохранения
-                    const ElevateButtonWidget(),
-                  ],
-                ),
-              ),
-            ),
+          children: const [
+            SizedBox(height: 40),
+            _ChoosingAPetsWidget(),
+            _PetForm(),
           ],
         ),
       ),
     );
+  }
+}
+
+class _PetForm extends StatefulWidget {
+  const _PetForm();
+
+  @override
+  State<_PetForm> createState() => __PetFormState();
+}
+
+class __PetFormState extends State<_PetForm> {
+  late TextEditingController birthDateController;
+  late TextEditingController weightController;
+  late TextEditingController emailController;
+
+  @override
+  void initState() {
+    super.initState();
+    final petsModel = context.read<PetsModel>();
+    birthDateController = TextEditingController(text: petsModel.birthDate);
+    weightController = TextEditingController();
+    emailController = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    birthDateController.dispose();
+    weightController.dispose();
+    emailController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final petsModel = context.watch<PetsModel>();
+    return Form(
+      key: petsModel.formKey,
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: [
+            // Поле для имени питомца
+            _FormFieldWidget(
+              label: AppStrings.petName,
+              validator: _validatePetName,
+            ),
+            // Поле для даты рождения питомца
+            _DateFormFieldWidget(
+              label: AppStrings.birthDate,
+              validator: _validateBirthDate,
+              onTap: () async {
+                final pickedDate = await myDataPicker(context);
+                if (pickedDate == null) return;
+                petsModel.birthDateOnDateTime = pickedDate;
+                petsModel.updateField(
+                  fieldName: FieldName.birthDate,
+                  value: StringFieldValue(pickedDate.toStringDateAndTime()),
+                );
+                setState(() {
+                  birthDateController.text = pickedDate.toStringDateAndTime();
+                });
+              },
+              controller: birthDateController,
+            ),
+            // Поле для веса питомца
+            _FormFieldWidget(
+              label: AppStrings.weight,
+              keyboardType: TextInputType.number,
+              validator: _validateWeight,
+              controller: weightController,
+            ),
+            // Поле для электронной почты хозяина
+            _FormFieldWidget(
+              label: AppStrings.ownerEmail,
+              validator: _validateEmail,
+              controller: emailController,
+            ),
+            // Условное отображение чекбоксов прививок
+            [TypeOfPet.dog, TypeOfPet.cat].map((e) => e.index).contains(petsModel.selectedIndexPet)
+                ? const CheckboxListVaccinationsWidget()
+                : const SizedBox.shrink(),
+            // Кнопка сохранения
+            const ElevateButtonWidget(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Валидатор для имени питомца
+  String? _validatePetName(String? value) {
+    if (value == null || value.trim().length < 3 || value.trim().length > 20) {
+      return AppStrings.petNameValidation;
+    }
+    return null;
+  }
+/// Валидатор для даты рождения питомца
+  String? _validateBirthDate(String? value) {
+    return (value == null || value.trim().isEmpty) ? AppStrings.birthDateValidation : null;
+  }
+/// Валидатор для веса питомца
+  String? _validateWeight(String? value) {
+    if (value == null || value.isEmpty) {
+      return AppStrings.weightValidationEmpty;
+    }
+    final parsedValue = double.tryParse(value);
+    if (parsedValue == null || parsedValue <= 0) {
+      return AppStrings.weightValidationInvalid;
+    }
+    return null;
+  }
+  /// Валидатор для электронной почты хозяина
+  String? _validateEmail(String? value) {
+    if (value == null || !RegExp(r'^[\w-]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
+      return AppStrings.ownerEmailValidation;
+    }
+    return null;
   }
 }
 
@@ -153,9 +190,9 @@ class _ChoosingAPetsWidget extends StatelessWidget {
 class _PetWidget extends StatelessWidget {
   const _PetWidget(
       {required this.iconPath,
-      required this.petName,
-      required this.backgroundColor,
-      required this.foregroundColor});
+        required this.petName,
+        required this.backgroundColor,
+        required this.foregroundColor});
   final String iconPath;
   final String petName;
   final Color backgroundColor;
@@ -180,7 +217,6 @@ class _PetWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 5),
-        // TODO: Исправить отступы чтобы не было ошибки
         Text(
           petName,
           style: Theme.of(context).textTheme.bodySmall,
@@ -269,17 +305,18 @@ class _BaseFormFieldWidget extends StatelessWidget {
   }
 }
 
-
 /// Виджет для ввода текста
 class _FormFieldWidget extends StatelessWidget {
   final String label;
   final TextInputType keyboardType;
   final String? Function(String?) validator;
+  final TextEditingController? controller;
 
   const _FormFieldWidget({
     required this.label,
     required this.validator,
     this.keyboardType = TextInputType.text,
+    this.controller,
   });
 
   @override
@@ -288,10 +325,10 @@ class _FormFieldWidget extends StatelessWidget {
       label: label,
       keyboardType: keyboardType,
       validator: validator,
+      controller: controller,
     );
   }
 }
-
 
 /// Виджет для поля ввода даты
 class _DateFormFieldWidget extends StatelessWidget {
@@ -320,37 +357,57 @@ class _DateFormFieldWidget extends StatelessWidget {
 }
 
 /// Виджет для отображения списка прививок
-class CheckboxListVaccinationsWidget extends StatelessWidget {
+class CheckboxListVaccinationsWidget extends StatefulWidget {
   const CheckboxListVaccinationsWidget({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final petsModel = context.watch<PetsModel>();
-    final vaccinations = [
-      Vaccination(
+  State<CheckboxListVaccinationsWidget> createState() => _CheckboxListVaccinationsWidgetState();
+}
+
+class _CheckboxListVaccinationsWidgetState extends State<CheckboxListVaccinationsWidget> {
+  late List<VaccinationFieldConfiguration> vaccinations;
+
+  @override
+  void initState() {
+    super.initState();
+    final petsModel = context.read<PetsModel>();
+    vaccinations = [
+      VaccinationFieldConfiguration(
         title: AppStrings.rabies,
         fieldName: FieldName.rabies,
         textController: TextEditingController(text: petsModel.rabies),
       ),
-      Vaccination(
+      VaccinationFieldConfiguration(
         title: AppStrings.covid,
         fieldName: FieldName.covid,
         textController: TextEditingController(text: petsModel.covid),
       ),
-      Vaccination(
+      VaccinationFieldConfiguration(
         title: AppStrings.malaria,
         fieldName: FieldName.malaria,
         textController: TextEditingController(text: petsModel.malaria),
       ),
     ];
+  }
+
+  @override
+  void dispose() {
+    for (var vaccination in vaccinations) {
+      vaccination.dispose();
+    }
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final petsModel = context.watch<PetsModel>();
 
     return Padding(
       padding: const EdgeInsets.only(top: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(AppStrings.vaccinationTitle,
-              style: Theme.of(context).textTheme.titleLarge),
+          Text(AppStrings.vaccinationTitle, style: Theme.of(context).textTheme.titleLarge),
           ListView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
@@ -364,21 +421,22 @@ class CheckboxListVaccinationsWidget extends StatelessWidget {
                   child: _DateFormFieldWidget(
                     label: AppStrings.vaccinationDateLabel,
                     onTap: () async {
-                      DateTime pickedDate =
-                      await myDataPicker(context) as DateTime;
-                      petsModel.vaccinationDateOnDateTime = pickedDate;
-                      petsModel.updateField(
-                        fieldName: vaccination.fieldName,
-                        value: pickedDate.toStringDateAndTime(),
-                      );
+                      final pickedDate = await myDataPicker(context);
+                      if (pickedDate == null) return;
+                        petsModel.vaccinationDateOnDateTime = pickedDate;
+                        String formattedDate = pickedDate.toStringDateAndTime();
+                        petsModel.updateField(
+                          fieldName: vaccination.fieldName,
+                          value: StringFieldValue(formattedDate),
+                        );
+                        vaccination.textController.text = formattedDate;
                     },
                     validator: (value) {
-                      if (value == null || value.trim() == '') {
+                      if (value == null || value.trim().isEmpty) {
                         return AppStrings.vaccinationDateValidationEmpty;
                       }
                       if (petsModel.birthDateOnDateTime.millisecondsSinceEpoch >
-                          petsModel.vaccinationDateOnDateTime
-                              .millisecondsSinceEpoch) {
+                          petsModel.vaccinationDateOnDateTime.millisecondsSinceEpoch) {
                         return AppStrings.vaccinationDateValidationInvalid;
                       }
                       return null;
@@ -394,6 +452,7 @@ class CheckboxListVaccinationsWidget extends StatelessWidget {
     );
   }
 }
+
 
 /// Чекбокс для каждой прививки с полем ввода даты
 class VaccinationCheckbox extends StatefulWidget {

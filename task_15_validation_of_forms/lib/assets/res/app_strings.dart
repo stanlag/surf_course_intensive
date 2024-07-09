@@ -14,12 +14,12 @@ abstract class AppStrings {
   static const ownerEmailValidation = 'Валидация формата "name@mail.com"';
   static const vaccinationTitle = 'Cделанные прививки от:';
   static const vaccinationDateLabel = 'Дата последней прививки ';
-  static const vaccinationDateValidationEmpty = 'Поле должно соответствовать шаблону вида ДД.ММ.ГГГГ и не может быть раньше даты рождения питомца';
+  static const vaccinationDateValidationEmpty = 'Шаблон вида ДД.ММ.ГГГГ и не раньше даты рождения питомца';
   static const vaccinationDateValidationInvalid = 'Дата прививки не может быть раньше даты рождения питомца';
   static const saveButton = 'Сохранить';
   static const rabies = 'бешенства';
   static const covid = 'ковида';
   static const malaria = 'малярии';
   static const formSubmitted = 'Форма успешно отправлена';
-  static const errorNameField = 'Ошибка: неверное имя поля';
+  static const errorNameField = 'Ошибка: неверное имя поля или введен неправильный тип данных';
 }

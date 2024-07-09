@@ -1,14 +1,20 @@
-import 'package:flutter/cupertino.dart';
+
+import 'package:flutter/material.dart';
+
 import 'field_name.dart';
 
-class Vaccination {
+class VaccinationFieldConfiguration {
   final String title;
   final FieldName fieldName;
   final TextEditingController textController;
 
-  Vaccination({
+  VaccinationFieldConfiguration({
     required this.title,
     required this.fieldName,
     required this.textController,
   });
+
+  void dispose() {
+    textController.dispose();
+  }
 }
